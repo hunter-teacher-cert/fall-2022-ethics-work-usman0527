@@ -1,0 +1,30 @@
+#binsearch
+#Usman Ahmed
+#CSCI 77800 Fall 2022
+
+pos = -1
+
+def search(list, n):
+    
+    lower = 0
+    upper = len(list)-1
+    
+    while lower <= upper:
+        middle = (lower + upper) // 2
+        
+        if list[middle] == n:
+            globals()['pos'] = middle
+            return True
+        else:
+            if list[middle] < n:
+                lower = middle
+            else:
+                upper = middle
+                
+list = [4,7,8,12,45,99]
+n = 45
+
+if search(list, n):
+    print("found at ", pos +1)
+else:
+    print("Not found")
