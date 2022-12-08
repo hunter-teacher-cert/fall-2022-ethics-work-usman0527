@@ -1,5 +1,5 @@
 //Usman Ahmed and Kirk Martin
-//A Program that allows the user to keep track of how many hours a day he/she plays video games. It then calculates how many hours he/she plays on average. Finally, it traverses the arry in order to locate the day he/she played the least amount of hours. 
+//A Program that allows the user to keep track of how many hours a day he/she plays video games. It then calculates how many hours he/she plays on average. Finally, it //traverses the arry in order to locate the day he/she played the least amount of hours. 
 
 import java.util.Scanner;
 
