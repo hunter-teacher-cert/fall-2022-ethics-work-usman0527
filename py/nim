@@ -1,0 +1,33 @@
+# nim
+# Usman Ahmed
+# CSCI 77800 Fall 2022
+# collaborators: 
+# consulted: 
+
+player = 1
+state = 21
+
+print ("the number of objects is now ", state)
+
+while True:
+    print("player ", player)
+    while True:
+        move = input("what is your move?")
+        if int(move) in[1,2,3] and int(move) < state:
+            break
+        print("illegal move.")
+        
+    state = state - int(move)
+    
+    print("The number of objects is now ", state)
+    
+    if state==1:
+        print("player ", player, " wins!")
+        break
+    
+    if player==1:
+        player = 2
+    else:
+        player = 1
+        
+print ("Game is over")
